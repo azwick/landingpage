@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: lighter;
+    line-height: 1.4;
+    margin: 0;
+    background-color: #fff;
+    color: #3f332a;
+}
+img {
+    max-width: 100%;
+}
+.Page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    padding: 0 20px;
+    max-width: 992px;
+    margin: 0 auto;
+}
+@media (min-width: 1280px) {
+    .Page {
+        padding: 0;
+   }
+}
+@media (min-width: 1920px) {
+    .Page {
+        font-size: 120%;
+        max-width: 1280px;
+   }
+}
+.Headline {
+    font-family: 'Rancho', cursive;
+    font-weight: bolder;
+    font-size: 50px;
+    line-height: 1;
+    margin: 0 0 10px 0;
+}
+.Subline {
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 1.2;
+    margin: 0;
+}
+.Main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+}
+.Grid {
+    display: grid;
+    align-items: center;
+    grid-gap: 40px;
+    margin: 50px 0;
+    grid-template-columns: 1fr;
+}
+.Profile {
+    width: 60%;
+}
+@media (min-width: 640px) {
+    .Profile  {
+        width: 100%;
+   }
+}
+.Content {
+    margin: 40px 0;
+}
+@media (min-width: 640px) {
+    .Grid {
+        grid-template-columns: 1fr 2fr;
+   }
+}
+.SocialMedia-list {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.SocialMedia-item {
+    margin: 0 15px 0 0;
+}
+.SocialMedia-link svg {
+    fill: #3f332a;
+    transition: all 0.4s ease;
+}
+.SocialMedia-link:hover svg {
+    fill: #dd8f35;
+}

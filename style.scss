@@ -63,7 +63,6 @@ img {
 .Subline {
   font-weight: normal;
   font-size: 20px;
-  font-weight: normal;
   line-height: 1.2;
   margin: 0;
 }
@@ -83,12 +82,20 @@ img {
   grid-template-columns: 1fr;
 
   @media (min-width: $screen-sm) {
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 2fr;
   }
 }
 
 .Content {
   margin: 40px 0;
+}
+
+.Profile {
+  max-width: 60%;
+
+  @media (min-width: $screen-sm) {
+    max-width: 100%;
+  }
 }
 
 .SocialMedia {
